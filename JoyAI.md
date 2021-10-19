@@ -201,11 +201,88 @@
 
 ---
 
-# Py6
+# Py6 List
+  __sequences of objects__
+  __can contain a mix of any type of objects__
+  __one of the workhorse data structures__
   
+  ### Lists are mutable
+  - can change the second element into uppercase
+  
+  ### Maling a list
+  - list.append()
+  - list += [x]
+  
+  ### indexing
+  __same wqy as strings__
+  - using list indexing (for i in range(len(rainbow)))
+  - using list iterable (for color in rainbow)
+  - using enumerating list (for i, color in enumerate(rainbow))
+  
+  ### Slicing
+  - syntax: var[lower:upper:step]
+  - replace elements with
+  - delete elements
+  - copying elements
+   > b = a (얕은 복사)
+   > b = a[:] (깊은 복사)
+  
+  ### Tuple
+  - immutable
+  - a[0] = a[0].upper() *TYPE ERROR*
+  
+  ### List Method
+  - append(element)
+  - extend(list)
+  - inplace addition
+  - count()
+  - index(element) 
+   > return index
+  - insert(index)
+   > insert(2, 'pink')
+   > list[2:3] = ['pink', 'yellow']
+  - remove(index)
+   > remove(2)
+   > list[2:3] = []
+  - pop(index)
+   > return value
+  - sort()
+   > in-place
+   > don't want to modify -> use sorted()
+  - reverse
+   > in-place
+  
+  ### Operations on Lists
+  - len()
+  - sorted(), sorted(list, reverse = True), sorted(list, key = len)
+  - del
+  - in
+  - not in
 
 
 ---
 
-# Py7
+# Py7 Listcomp
   
+  ### List comprehension
+  - syntax: [expression for variable in iterable (if condition)]
+  - kinds
+   > list comprehension
+   > set comprehension
+   > dictionary comprehension
+  
+  ### Loop and Comprehension
+  
+  ### List Comprehension vs Loop
+  - list comprehension is faster than loop
+  
+  ### Dictionary
+  - construct a dictionary from a list
+   > alist = [(), (), ()]
+   > store = dict(alist)
+  - list(store.keys())
+  - list(store.values())
+  - for k, v in store.item():
+  
+  ### Dict Comprehension
+  - for k, v in zip(list1, list2):
